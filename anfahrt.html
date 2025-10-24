@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anfahrt und Kontakt - Finden Sie uns im Landikerstübli">
+    <title>Anfahrt - Landikerstübli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anfahrt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Landikerstübli</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Navigation öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menü</a></li>
+                    <li><a href="reservationen.html" class="nav-link">Reservationen</a></li>
+                    <li><a href="anfahrt.html" class="nav-link active">Anfahrt</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="kontakt.html" class="nav-link btn-primary-nav">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Anfahrt & Kontakt</h1>
+            <p>So finden Sie uns</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Adresse</h3>
+                    <p>Wettswilerstrasse 3<br>8903 Birmensdorf<br>Schweiz</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p><a href="tel:0433440536">043 344 05 36</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>E-Mail</h3>
+                    <p><a href="mailto:landikerstuebli@gmail.com">landikerstuebli@gmail.com</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 10:00-14:00 & 17:00-23:00<br>Sa: 17:00-23:00<br>So: Geschlossen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Standort</span>
+                <h2 class="section-title">Finden Sie uns auf der Karte</h2>
+            </div>
+
+            <!-- Google Maps -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.1234567890123!2d8.4397!3d47.3537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa0b3e3e3e3e3%3A0x1234567890abcdef!2sWettswilerstrasse%203%2C%208903%20Birmensdorf!5e0!3m2!1sde!2sch!4v1234567890123!5m2!1sde!2sch"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Landikerstübli Standort - Wettswilerstrasse 3, 8903 Birmensdorf">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directions Section -->
+    <section class="directions-section">
+        <div class="container">
+            <div class="directions-grid">
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <h3>Mit dem Auto</h3>
+                    <p>Von Zürich: Nehmen Sie die A3 Richtung Chur, Ausfahrt Birmensdorf. Folgen Sie der Wettswilerstrasse.</p>
+                    <p><strong>Parkplätze:</strong> Parkplätze vor und hinter dem Haus verfügbar (bis zu 80 Personen Kapazität).</p>
+                </div>
+
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="8" width="18" height="13" rx="2" ry="2"></rect>
+                            <path d="M3 12h18"></path>
+                            <path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                    </div>
+                    <h3>Mit öffentlichen Verkehrsmitteln</h3>
+                    <p>Bus Linie 227 oder 220 bis Haltestelle in der Nähe.</p>
+                    <p>Von Zürich HB: S-Bahn bis Birmensdorf, dann kurzer Fussweg zur Wettswilerstrasse 3.</p>
+                </div>
+
+                <div class="direction-card">
+                    <div class="direction-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>Gut zu wissen</h3>
+                    <p>Das Restaurant ist barrierefrei zugänglich.</p>
+                    <p>Fahrradparkplätze sind vorhanden.</p>
+                    <p>Bei Fragen zur Anfahrt rufen Sie uns gerne an!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Besuchen Sie uns!</h2>
+                <p>Wir freuen uns auf Ihren Besuch im Landikerstübli.</p>
+                <a href="reservationen.html" class="btn btn-light">Tisch reservieren</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Landikerstübli</h3>
+                    <p>Traditionelles Restaurant mit Pizza, italienischer und Schweizer Küche im Herzen der Region.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menü</a></li>
+                        <li><a href="reservationen.html">Reservationen</a></li>
+                        <li><a href="anfahrt.html">Anfahrt</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-contact">
+                        <li>Wettswilerstrasse 3</li>
+                        <li>8903 Birmensdorf</li>
+                        <li>Tel: 043 344 05 36</li>
+                        <li>landikerstuebli@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Öffnungszeiten</h4>
+                    <ul class="footer-contact">
+                        <li>Mo-Fr: 10:00-14:00 & 17:00-23:00</li>
+                        <li>Sa: 17:00-23:00</li>
+                        <li>So: Geschlossen</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Landikerstübli. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

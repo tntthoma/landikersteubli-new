@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unsere Speisekarte - Pizza, italienische und Schweizer Spezialitäten im Landikerstübli">
+    <title>Menü - Landikerstübli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Landikerstübli</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Navigation öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link active">Menü</a></li>
+                    <li><a href="reservationen.html" class="nav-link">Reservationen</a></li>
+                    <li><a href="anfahrt.html" class="nav-link">Anfahrt</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="kontakt.html" class="nav-link btn-primary-nav">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Unsere Speisekarte</h1>
+            <p>Entdecken Sie unsere kulinarischen Köstlichkeiten</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Menu Navigation -->
+            <div class="menu-nav">
+                <button class="menu-nav-btn active" data-category="pizza">Pizza</button>
+                <button class="menu-nav-btn" data-category="pasta">Pasta</button>
+                <button class="menu-nav-btn" data-category="risotto">Risotto & Gnocchi</button>
+                <button class="menu-nav-btn" data-category="fleisch">Fleisch</button>
+                <button class="menu-nav-btn" data-category="fisch">Fisch & Poulet</button>
+                <button class="menu-nav-btn" data-category="vorspeisen">Vorspeisen & Salate</button>
+                <button class="menu-nav-btn" data-category="getraenke">Getränke</button>
+                <button class="menu-nav-btn" data-category="kinder">Kinder</button>
+            </div>
+
+            <!-- Pizza Menu -->
+            <div class="menu-category active" id="pizza">
+                <div class="category-header">
+                    <h2>Pizza</h2>
+                    <p>Alle Pizzen werden im traditionellen Steinofen gebacken</p>
+                    <p class="size-info">Klein (Ø 26cm) | Normal (Ø 32cm)</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>214 Margherita</h3>
+                            <span class="price">CHF 14.50 / 16.50</span>
+                        </div>
+                        <p class="description">Oregano</p>
+                    </div>
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Beliebt</div>
+                        <div class="menu-item-header">
+                            <h3>220 Prosciutto</h3>
+                            <span class="price">CHF 17.00 / 19.00</span>
+                        </div>
+                        <p class="description">Schinken (Schwein), Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>221 Prosciutto Funghi</h3>
+                            <span class="price">CHF 19.00 / 21.00</span>
+                        </div>
+                        <p class="description">Schinken (Schwein), frische Champignons, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>208 Funghi</h3>
+                            <span class="price">CHF 16.50 / 18.50</span>
+                        </div>
+                        <p class="description">Frische Champignons, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>209 Funghi Porcini</h3>
+                            <span class="price">CHF 21.50 / 23.50</span>
+                        </div>
+                        <p class="description">Steinpilz, Zwiebeln, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>201 Calabrese</h3>
+                            <span class="price">CHF 18.50 / 20.50</span>
+                        </div>
+                        <p class="description">Scharfe Salami (Schwein), Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>206 Diavolo</h3>
+                            <span class="price">CHF 16.50 / 18.50</span>
+                        </div>
+                        <p class="description">Zwiebeln, Knoblauch, Peperoncini, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>222 Quattro Stagioni</h3>
+                            <span class="price">CHF 21.50 / 23.50</span>
+                        </div>
+                        <p class="description">Schinken (Schwein), milde Salami (Schwein), frische Champignons, Artischocken, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>223 Quattro Formaggi</h3>
+                            <span class="price">CHF 19.50 / 21.50</span>
+                        </div>
+                        <p class="description">Gorgonzola, Parmesan, Mascarpone, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>212 Hawaii</h3>
+                            <span class="price">CHF 19.00 / 21.50</span>
+                        </div>
+                        <p class="description">Schinken (Schwein), Ananas, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>226 Tonno</h3>
+                            <span class="price">CHF 19.00 / 21.00</span>
+                        </div>
+                        <p class="description">Thon, Zwiebeln, Kapern, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>227 Vegetariana</h3>
+                            <span class="price">CHF 19.00 / 21.00</span>
+                        </div>
+                        <p class="description">Steinpilze, Auberginen, Peperoni, Zwiebeln, Knoblauch, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>211 Gorgonzola</h3>
+                            <span class="price">CHF 18.50 / 20.50</span>
+                        </div>
+                        <p class="description">Gorgonzola, Oregano</p>
+                    </div>
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Spezialität</div>
+                        <div class="menu-item-header">
+                            <h3>213 Landi-Stübli</h3>
+                            <span class="price">CHF 21.50 / 23.50</span>
+                        </div>
+                        <p class="description">Mascarpone, Schinken (Schwein), frische Champignons, Peperoni, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>218 Parma</h3>
+                            <span class="price">CHF 21.50 / 23.50</span>
+                        </div>
+                        <p class="description">Rohschinken (Schwein), Rucola, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>219 Pollo</h3>
+                            <span class="price">CHF 19.50 / 21.50</span>
+                        </div>
+                        <p class="description">Pouletfleisch, Zwiebeln, Peperoncini, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>224 Salmone</h3>
+                            <span class="price">CHF 21.00 / 23.00</span>
+                        </div>
+                        <p class="description">Lachs (NO), Zwiebeln, Broccoli, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>217 Padrone</h3>
+                            <span class="price">CHF 22.50 / 24.50</span>
+                        </div>
+                        <p class="description">Kalbfleisch, frische Champignons, Peperoncini, Zwiebeln, Knoblauch, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>203 Calzone</h3>
+                            <span class="price">CHF 20.50 / 22.50</span>
+                        </div>
+                        <p class="description">Zusammengelegte Pizza mit Schinken (Schwein), Ei, frische Champignons, Oregano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>205 Desiderio</h3>
+                            <span class="price">CHF 23.50 / 25.50</span>
+                        </div>
+                        <p class="description">4 Zutaten Ihrer Wahl</p>
+                    </div>
+                </div>
+                <p class="menu-note">Separate Zutaten: Fleisch/Wurst CHF 2.00 | andere CHF 1.00</p>
+            </div>
+
+            <!-- Pasta Menu -->
+            <div class="menu-category" id="pasta">
+                <div class="category-header">
+                    <h2>Teigwaren - Pasta</h2>
+                    <p>Spaghetti - Tagliatelle - Penne mit hausgemachten Saucen</p>
+                    <p class="size-info">Kleine Portion | Normale Portion</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>061 Napoli</h3>
+                            <span class="price">CHF 16.50 / 19.50</span>
+                        </div>
+                        <p class="description">Würzige Tomatensauce</p>
+                    </div>
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Beliebt</div>
+                        <div class="menu-item-header">
+                            <h3>053 Bolognese</h3>
+                            <span class="price">CHF 17.50 / 20.50</span>
+                        </div>
+                        <p class="description">Hackfleisch (Rind), Tomatensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>056 Carbonara</h3>
+                            <span class="price">CHF 19.50 / 22.50</span>
+                        </div>
+                        <p class="description">Speck (Schwein), Rahm, Ei</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>050 Aglio Olio</h3>
+                            <span class="price">CHF 17.50 / 20.50</span>
+                        </div>
+                        <p class="description">Knoblauch, Petersilie, Peperoncini, Olivenöl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>052 Arrabbiata</h3>
+                            <span class="price">CHF 17.50 / 20.50</span>
+                        </div>
+                        <p class="description">Peperoncini, Basilikum, Tomatensauce, Knoblauch</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>064 Panna</h3>
+                            <span class="price">CHF 17.50 / 20.50</span>
+                        </div>
+                        <p class="description">Rahmsauce, Parmesan</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>065 Pesto</h3>
+                            <span class="price">CHF 18.50 / 21.50</span>
+                        </div>
+                        <p class="description">Basilikum, Pinienkerne, Olivenöl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>057 Funghi</h3>
+                            <span class="price">CHF 18.50 / 21.50</span>
+                        </div>
+                        <p class="description">Frische Champignons, Olivenöl, Knoblauch, Basilikum</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>058 Funghi Porcini</h3>
+                            <span class="price">CHF 19.50 / 22.50</span>
+                        </div>
+                        <p class="description">Steinpilze, Zwiebeln, Knoblauch, Rahmsauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>055 Calabrese</h3>
+                            <span class="price">CHF 19.50 / 22.50</span>
+                        </div>
+                        <p class="description">Scharfe Salami (Schwein), Rahmsauce</p>
+                    </div>
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Spezialität</div>
+                        <div class="menu-item-header">
+                            <h3>059 Landiker-Stübli</h3>
+                            <span class="price">CHF 21.50 / 24.50</span>
+                        </div>
+                        <p class="description">Kalbfleisch, Peperoncini, Knoblauch, Tomaten-Rahmsauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>066 Pollo</h3>
+                            <span class="price">CHF 20.50 / 23.50</span>
+                        </div>
+                        <p class="description">Pouletfleisch, Paprikasauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>067 Salmone</h3>
+                            <span class="price">CHF 21.50 / 24.50</span>
+                        </div>
+                        <p class="description">Lachs, Knoblauch, Zwiebeln, Tomaten-Rahmsauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>068 Scampi</h3>
+                            <span class="price">CHF 22.50 / 25.50</span>
+                        </div>
+                        <p class="description">Geschälte Riesencrevetten (BO), Knoblauch, Peperoncini</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>063 Orientale</h3>
+                            <span class="price">CHF 20.50 / 23.50</span>
+                        </div>
+                        <p class="description">Crevetten (CA/VN), Zwiebeln, Curry, Rahmsauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>070 Verdura</h3>
+                            <span class="price">CHF 17.50 / 20.50</span>
+                        </div>
+                        <p class="description">Frisches Tagesgemüse, Rahmsauce</p>
+                    </div>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Überbacken - Cotto</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>083 Lasagne</h3>
+                            <span class="price">CHF 21.50</span>
+                        </div>
+                        <p class="description">Rindfleischfüllung</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>080 Cannelloni al Forno</h3>
+                            <span class="price">CHF 21.50</span>
+                        </div>
+                        <p class="description">Rindfleischfüllung</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>081 Cannelloni Spinaci</h3>
+                            <span class="price">CHF 20.50</span>
+                        </div>
+                        <p class="description">Spinat-Ricottafüllung</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>084 Penne al Forno</h3>
+                            <span class="price">CHF 22.50</span>
+                        </div>
+                        <p class="description">Schinken, Pilz, Knoblauch, Mozzarella, Tomaten-Rahmsauce</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risotto & Gnocchi -->
+            <div class="menu-category" id="risotto">
+                <div class="category-header">
+                    <h2>Risotto & Gnocchi</h2>
+                    <p>Kleine Portion | Normale Portion</p>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Risotto</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Spezialität</div>
+                        <div class="menu-item-header">
+                            <h3>040 Milanese</h3>
+                            <span class="price">CHF 22.50 / 25.50</span>
+                        </div>
+                        <p class="description">Safran, Schinken (Schwein), Parmesan</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>041 Funghi Porcini</h3>
+                            <span class="price">CHF 20.50 / 23.50</span>
+                        </div>
+                        <p class="description">Zwiebeln, Knoblauch, Steinpilze, Weisswein, Parmesan</p>
+                    </div>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Gnocchi</h3>
+                    <p class="subtitle">Kartoffel, Eier, Weizenmehl - Ricotta-Spinatfüllung</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>042 Bolognese</h3>
+                            <span class="price">CHF 17.50 / 20.50</span>
+                        </div>
+                        <p class="description">Hackfleisch (Rind), Tomatensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>043 Funghi Porcini</h3>
+                            <span class="price">CHF 20.50 / 23.50</span>
+                        </div>
+                        <p class="description">Steinpilze, Rahmsauce, Parmesan</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>044 Gorgonzola</h3>
+                            <span class="price">CHF 18.50 / 21.50</span>
+                        </div>
+                        <p class="description">Gorgonzolasauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>046 Padrone</h3>
+                            <span class="price">CHF 20.50 / 23.50</span>
+                        </div>
+                        <p class="description">Kalbfleisch, Zwiebeln, Currysauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>047 Pesto</h3>
+                            <span class="price">CHF 18.50 / 21.50</span>
+                        </div>
+                        <p class="description">Basilikum, Pinienkerne, Olivenöl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>048 Santa Chiara</h3>
+                            <span class="price">CHF 18.50 / 21.50</span>
+                        </div>
+                        <p class="description">Hackfleisch (Rind), Basilikum, Rahmsauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>049 Verde Mare</h3>
+                            <span class="price">CHF 20.50 / 23.50</span>
+                        </div>
+                        <p class="description">Crevetten, Pesto, Rahmsauce</p>
+                    </div>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Tortelloni</h3>
+                    <p class="subtitle">Teigwaren, Eier, Mehl - Ricotta-Spinatfüllung</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>092 Tortelloni Napoli</h3>
+                            <span class="price">CHF 18.50 / 21.50</span>
+                        </div>
+                        <p class="description">Quark-Spinatfüllung an würziger Tomatensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>094 Tortelloni alla Panna</h3>
+                            <span class="price">CHF 19.50 / 22.50</span>
+                        </div>
+                        <p class="description">Spinat-Ricottafüllung an Rahmsauce</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fleisch -->
+            <div class="menu-category" id="fleisch">
+                <div class="category-header">
+                    <h2>Fleisch - Carne</h2>
+                    <p>Eine Beilage nach Wahl ist im Preis inbegriffen</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Spezialität</div>
+                        <div class="menu-item-header">
+                            <h3>313 Rindsfilet mit Kräuterbutter</h3>
+                            <span class="price">CHF 41.50</span>
+                        </div>
+                        <p class="description">Rinderfilet grilliert mit Kräuterbutter</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>314 Rindsfilet Funghi Porcini</h3>
+                            <span class="price">CHF 43.50</span>
+                        </div>
+                        <p class="description">Rinderfilet mit frischer Steinpilzsauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>315 Rindsfilet mit Pfeffersauce</h3>
+                            <span class="price">CHF 42.50</span>
+                        </div>
+                        <p class="description">Rinderfilet mit grünem Pfeffer</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>301 Kalbs-Cordonbleu</h3>
+                            <span class="price">CHF 35.50</span>
+                        </div>
+                        <p class="description">Kalbsfleisch, Schinken (Schwein), Käse, paniert (hausgemacht)</p>
+                    </div>
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Beliebt</div>
+                        <div class="menu-item-header">
+                            <h3>302 Kalbs-Cordonbleu "Landi"</h3>
+                            <span class="price">CHF 37.50</span>
+                        </div>
+                        <p class="description">Kalbsfleisch, Gorgonzola, scharfe Salami (Schwein), paniert (hausgemacht)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>300 Kalbsschnitzel Gorgonzola</h3>
+                            <span class="price">CHF 34.50</span>
+                        </div>
+                        <p class="description">Kalbsschnitzel an Gorgonzolasauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>304 Kalbsschnitzel Limone</h3>
+                            <span class="price">CHF 33.50</span>
+                        </div>
+                        <p class="description">Kalbsfleisch, Zitronensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>306 Kalbsschnitzel paniert</h3>
+                            <span class="price">CHF 33.50</span>
+                        </div>
+                        <p class="description">Kalbsfleisch, paniert</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>307 Piccata Milanese</h3>
+                            <span class="price">CHF 36.50</span>
+                        </div>
+                        <p class="description">Kalbsfleisch, Ei, Parmesan, paniert</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>309 Schweins-Cordonbleu</h3>
+                            <span class="price">CHF 31.50</span>
+                        </div>
+                        <p class="description">Schweinefleisch, Schinken (Schwein), Käse, paniert (hausgemacht)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>311 Schweinsschnitzel paniert</h3>
+                            <span class="price">CHF 30.50</span>
+                        </div>
+                        <p class="description">Schweinefleisch paniert</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>312 Schweinssteak grilliert</h3>
+                            <span class="price">CHF 31.50</span>
+                        </div>
+                        <p class="description">Schweinefleisch mit Kräuterbutter</p>
+                    </div>
+                </div>
+                <div class="beilagen-section">
+                    <h4>Zusätzliche Beilagen</h4>
+                    <div class="beilagen-grid">
+                        <div class="beilage-item">
+                            <span>Gemüse</span>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Pommes Frites</span>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Reis</span>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Risotto</span>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Rösti Croquetten</span>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Teigwaren</span>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fisch & Poulet -->
+            <div class="menu-category" id="fisch">
+                <div class="category-header">
+                    <h2>Fisch & Poulet</h2>
+                    <p>Eine Beilage nach Wahl ist im Preis inbegriffen</p>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Poulet - Pollo</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>100 Petto di Pollo all' Arancia</h3>
+                            <span class="price">CHF 29.50</span>
+                        </div>
+                        <p class="description">Pouletbrust an Orangensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>101 Petto di Pollo Diavolo</h3>
+                            <span class="price">CHF 29.50</span>
+                        </div>
+                        <p class="description">Pouletbrust, Peperoncini, Knoblauch, Zwiebeln</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>103 Poulet Cordon-Bleu</h3>
+                            <span class="price">CHF 30.50</span>
+                        </div>
+                        <p class="description">Pouletbrust, Schinken, Käse (paniert)</p>
+                    </div>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Fisch - Pesce</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Spezialität</div>
+                        <div class="menu-item-header">
+                            <h3>111 Gamberoni alla Griglia</h3>
+                            <span class="price">CHF 41.50</span>
+                        </div>
+                        <p class="description">Riesencrevetten (BD) vom Grill</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>113 Pesce Persico</h3>
+                            <span class="price">CHF 37.00</span>
+                        </div>
+                        <p class="description">Eglifilet in Butter "nach Müllerinnen Art"</p>
+                    </div>
+                </div>
+                <div class="beilagen-section">
+                    <h4>Zusätzliche Beilagen</h4>
+                    <div class="beilagen-grid">
+                        <div class="beilage-item">
+                            <span>Gemüse</span>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Pommes Frites</span>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Reis</span>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Risotto</span>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Rösti Croquetten</span>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <div class="beilage-item">
+                            <span>Teigwaren</span>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vorspeisen & Salate -->
+            <div class="menu-category" id="vorspeisen">
+                <div class="category-header">
+                    <h2>Vorspeisen & Salate</h2>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Suppen - Zuppe</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>001 Broccoli Creme Suppe</h3>
+                            <span class="price">CHF 9.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>002 Minestrone</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">Mit Teigwaren</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>003 Steinpilz Creme Suppe</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>004 Tomaten Creme Suppe</h3>
+                            <span class="price">CHF 9.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>005 Tortellini in Brodo</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Salate - Insalate</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>015 Verde</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">Grüner Salat</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>009 Mista</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">Gemischter Salat</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>013 Pomodoro</h3>
+                            <span class="price">CHF 10.50</span>
+                        </div>
+                        <p class="description">Tomaten mit Zwiebeln</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>006 Mezza Caprese</h3>
+                            <span class="price">CHF 10.50</span>
+                        </div>
+                        <p class="description">Halbe Portion Tomaten-Mozzarella</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>010 Nüsslisalat mit Ei</h3>
+                            <span class="price">CHF 11.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>014 Rucola mit Parmesan</h3>
+                            <span class="price">CHF 12.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>008 Landikerstübli</h3>
+                            <span class="price">CHF 12.50</span>
+                        </div>
+                        <p class="description">Gemischter Salat mit Mozzarella, Oliven und Artischocken</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>011 Nüsslisalat mit Steinpilz</h3>
+                            <span class="price">CHF 13.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>012 Nüsslisalat mit Speck und Brotcroutons</h3>
+                            <span class="price">CHF 14.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>007 Caprese</h3>
+                            <span class="price">CHF 18.00</span>
+                        </div>
+                        <p class="description">Grosse Portion Tomaten-Mozzarella</p>
+                    </div>
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Beliebt</div>
+                        <div class="menu-item-header">
+                            <h3>016 Salatteller</h3>
+                            <span class="price">CHF 20.50</span>
+                        </div>
+                        <p class="description">Grosser gemischter Salat mit Mozzarella, Oliven, Artischocken, Thunfisch, gekochtem Ei</p>
+                    </div>
+                </div>
+                <div class="menu-subheader">
+                    <h3>Vorspeisen - Antipasti</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>024 Crevettencocktail</h3>
+                            <span class="price">CHF 17.50</span>
+                        </div>
+                        <p class="description">Cocktailsauce, garniert mit Ananas und Rahm</p>
+                    </div>
+                    <div class="menu-item featured">
+                        <div class="featured-badge">Spezialität</div>
+                        <div class="menu-item-header">
+                            <h3>022 Antipasto Landi Stübli</h3>
+                            <span class="price">CHF 17.50 / 20.50</span>
+                        </div>
+                        <p class="description">Salami (Schwein), Rohschinken (Schwein), Schinken (Schwein), Artischocken, Oliven, Mozzarella | Kleine/Normale Portion</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>023 Carpaccio di Manzo</h3>
+                            <span class="price">CHF 18.50 / 21.50</span>
+                        </div>
+                        <p class="description">Rohes Rindfleisch, garniert mit Parmesan und Rucola | Kleine/Normale Portion</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Getränke -->
+            <div class="menu-category" id="getraenke">
+                <div class="category-header">
+                    <h2>Getränke</h2>
+                </div>
+
+                <div class="menu-subheader">
+                    <h3>Mineralwasser Offenausschank</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Mineral</h3>
+                            <span class="price">CHF 4.00 / 5.80</span>
+                        </div>
+                        <p class="description">3.0 dl / 5.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Citro / Coca Cola / Fanta / Rivella</h3>
+                            <span class="price">CHF 4.50 / 5.80</span>
+                        </div>
+                        <p class="description">3.0 dl / 5.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Apfelsaft</h3>
+                            <span class="price">CHF 4.50 / 5.80</span>
+                        </div>
+                        <p class="description">3.0 dl / 5.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Apfel-Shorley</h3>
+                            <span class="price">CHF 4.50 / 5.80</span>
+                        </div>
+                        <p class="description">3.0 dl / 5.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Orangensaft</h3>
+                            <span class="price">CHF 5.00</span>
+                        </div>
+                        <p class="description">3.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Eistee</h3>
+                            <span class="price">CHF 4.50 / 5.80</span>
+                        </div>
+                        <p class="description">3.0 dl / 5.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Himbeer-Sirup</h3>
+                            <span class="price">CHF 1.50 / 2.50</span>
+                        </div>
+                        <p class="description">3.0 dl / 5.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Leitungswasser</h3>
+                            <span class="price">CHF 2.00</span>
+                        </div>
+                        <p class="description">Mit zusätzlichem Getränk gratis</p>
+                    </div>
+                </div>
+
+                <div class="menu-subheader">
+                    <h3>Flaschen - Mineral</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Mineral</h3>
+                            <span class="price">CHF 11.00</span>
+                        </div>
+                        <p class="description">1.0 lt</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Citro</h3>
+                            <span class="price">CHF 13.50</span>
+                        </div>
+                        <p class="description">1.5 lt</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Coca-Cola / Zero</h3>
+                            <span class="price">CHF 5.00</span>
+                        </div>
+                        <p class="description">3.3 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Sinalco / Fanta</h3>
+                            <span class="price">CHF 5.00</span>
+                        </div>
+                        <p class="description">3.3 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Rivella (Rot, Grün, Blau)</h3>
+                            <span class="price">CHF 5.00</span>
+                        </div>
+                        <p class="description">3.3 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Schweppes Tonic / Lemon</h3>
+                            <span class="price">CHF 5.00</span>
+                        </div>
+                        <p class="description">2.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Apfelsaft</h3>
+                            <span class="price">CHF 5.00</span>
+                        </div>
+                        <p class="description">3.3 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>San Pellegrino / Panna</h3>
+                            <span class="price">CHF 5.80</span>
+                        </div>
+                        <p class="description">4.5 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Most - Ramseier</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <p class="description">Mit oder ohne Alkohol, 4.9 dl</p>
+                    </div>
+                </div>
+
+                <div class="menu-subheader">
+                    <h3>Bier / Feldschlösschen</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Stange / Stange Panache</h3>
+                            <span class="price">CHF 4.80</span>
+                        </div>
+                        <p class="description">3.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Hergöttli</h3>
+                            <span class="price">CHF 4.30</span>
+                        </div>
+                        <p class="description">2.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Grosses Bier offen</h3>
+                            <span class="price">CHF 6.20</span>
+                        </div>
+                        <p class="description">5.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Alkoholfreies Bier</h3>
+                            <span class="price">CHF 5.30</span>
+                        </div>
+                        <p class="description">3.0 dl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Weizenbier hell oder dunkel</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <p class="description">5.0 dl</p>
+                    </div>
+                </div>
+
+                <div class="menu-subheader">
+                    <h3>Café</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cafe Crème / Schale / Expresso</h3>
+                            <span class="price">CHF 4.60</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Doppelter Expresso</h3>
+                            <span class="price">CHF 6.10</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cappuccino / Late Macchiato</h3>
+                            <span class="price">CHF 6.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Corretto Grappa</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cafe fertig/Lutz mit Obstler/Kräuter</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cafe fertig/Lutz mit Kirsch/Zwetschgen</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Diverse Tee</h3>
+                            <span class="price">CHF 4.50</span>
+                        </div>
+                        <p class="description">Nature oder crème</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tee-Rum</h3>
+                            <span class="price">CHF 7.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Ovomaltine / Schoggi</h3>
+                            <span class="price">CHF 4.50 / 7.50</span>
+                        </div>
+                        <p class="description">3.0 dl / 5.0 dl</p>
+                    </div>
+                </div>
+
+                <div class="menu-subheader">
+                    <h3>Aperitif</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Appenzeller</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <p class="description">29.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Fernet Branca</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cynar</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <p class="description">16.5% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>San Bitter</h3>
+                            <span class="price">CHF 6.50</span>
+                        </div>
+                        <p class="description">2.5 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Campari Bitter</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <p class="description">23.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Campari-Orange</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Martini rot oder weiss</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <p class="description">16.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pernod</h3>
+                            <span class="price">CHF 7.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Ramazotti</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">32.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Averna</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">32.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tomatensaft</h3>
+                            <span class="price">CHF 6.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cüpli</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Gespritzter Weisswein</h3>
+                            <span class="price">CHF 10.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Gespritzter Aperol</h3>
+                            <span class="price">CHF 10.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-subheader">
+                    <h3>Spirituosen</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Grappa Fior di Vite</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Grappa Nardini</h3>
+                            <span class="price">CHF 10.50</span>
+                        </div>
+                        <p class="description">50.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Grappa Brunello / Barollo</h3>
+                            <span class="price">CHF 10.50</span>
+                        </div>
+                        <p class="description">38.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Sambuca</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Obstbrandwein / Kräuter</h3>
+                            <span class="price">CHF 7.00</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Zwetschgen / Kirsch</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Williams Morin</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">43.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Whisky Ballantine's / Red Label</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Whisky Johnnie Walter Black</h3>
+                            <span class="price">CHF 10.50</span>
+                        </div>
+                        <p class="description">43.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Wodka und Gin</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Bacardi und Rum</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">37.5% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Calvados Morin</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Remy Martin</h3>
+                            <span class="price">CHF 10.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Veccia Romagna</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">38.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Vieille Prune</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                        <p class="description">41.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Limoncella</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">4 cl</p>
+                    </div>
+                </div>
+
+                <div class="menu-subheader">
+                    <h3>Likör</h3>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Amaretto di Saronno</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">28.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Grand Marnier</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">40.0% | 4 cl</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Baileys Irish</h3>
+                            <span class="price">CHF 8.50</span>
+                        </div>
+                        <p class="description">17.0% | 4 cl</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kinder Menu -->
+            <div class="menu-category" id="kinder">
+                <div class="category-header">
+                    <h2>Kinder Menü - Per il Bambini</h2>
+                    <p>Dazu 2 dl. Sirup gratis</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>030 Butternüdeli</h3>
+                            <span class="price">CHF 9.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>032 Snoopy - Spaghetti Napoli</h3>
+                            <span class="price">CHF 12.50</span>
+                        </div>
+                        <p class="description">Mit feiner Tomatensauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>033 Pizza nach Wahl</h3>
+                            <span class="price">CHF 13.00</span>
+                        </div>
+                        <p class="description">Funghi oder Margherita oder Prosciutto (Schwein)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>035 Winnie Puuh</h3>
+                            <span class="price">CHF 13.50</span>
+                        </div>
+                        <p class="description">Schweinsschnitzel paniert mit Pommes-Frites</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>031 Dinky-Winky - Chicken Nuggets</h3>
+                            <span class="price">CHF 14.50</span>
+                        </div>
+                        <p class="description">Poulet-Nuggets paniert mit Pommes-Frites</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>034 Pinocchio</h3>
+                            <span class="price">CHF 15.50</span>
+                        </div>
+                        <p class="description">Kalbsschnitzel paniert mit Pommes-Frites</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Menu -->
+            <div class="menu-download">
+                <p>Möchten Sie unsere vollständige Speisekarte als PDF?</p>
+                <a href="#" class="btn btn-primary">Menü herunterladen (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Bereit, unsere Köstlichkeiten zu probieren?</h2>
+                <p>Reservieren Sie jetzt Ihren Tisch für ein unvergessliches kulinarisches Erlebnis.</p>
+                <a href="reservationen.html" class="btn btn-light">Tisch reservieren</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Landikerstübli</h3>
+                    <p>Traditionelles Restaurant mit Pizza, italienischer und Schweizer Küche im Herzen der Region.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menü</a></li>
+                        <li><a href="reservationen.html">Reservationen</a></li>
+                        <li><a href="anfahrt.html">Anfahrt</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-contact">
+                        <li>Wettswilerstrasse 3</li>
+                        <li>8903 Birmensdorf</li>
+                        <li>Tel: 043 344 05 36</li>
+                        <li>landikerstuebli@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Öffnungszeiten</h4>
+                    <ul class="footer-contact">
+                        <li>Mo-Fr: 10:00-14:00 & 17:00-23:00</li>
+                        <li>Sa: 17:00-23:00</li>
+                        <li>So: Geschlossen</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Landikerstübli. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

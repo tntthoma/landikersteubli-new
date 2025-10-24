@@ -1,0 +1,47 @@
+WICHTIG: Bilder hinzufügen!
+=============================
+
+Die Webseite benötigt noch folgende Bilder:
+
+HAUPTSEITE (index.html):
+------------------------
+1. restaurant-interior.jpg (1200x800px)
+   - Für die "Welcome Section"
+   - Zeigt das gemütliche Interieur des Restaurants
+
+2. pizza-oven.jpg (1200x800px)
+   - Für die "Opening Hours Section"
+   - Zeigt den traditionellen Pizzaofen
+
+GALERIE (galerie.html):
+-----------------------
+Erstellen Sie einen Unterordner "gallery" und fügen Sie hinzu:
+
+1. restaurant-1.jpg - Restaurant Innenansicht
+2. restaurant-2.jpg - Terrasse
+3. restaurant-3.jpg - Bar & Lounge
+4. pizza-1.jpg - Pizza Margherita
+5. pizza-2.jpg - Pizza im Ofen
+6. food-1.jpg - Pasta Gericht
+7. food-2.jpg - Schweizer Spezialität (z.B. Zürcher Geschnetzeltes)
+8. food-3.jpg - Dessert (z.B. Tiramisu)
+9. event-1.jpg - Event/Private Feier
+
+Empfohlene Größe: 1200x900px (4:3 Format)
+
+BILDOPTIMIERUNG:
+----------------
+- Komprimieren Sie alle Bilder vor dem Upload
+- Empfohlene Tools: TinyPNG.com, ImageOptim
+- Zielgröße: max. 200-300KB pro Bild
+- Format: JPG für Fotos, PNG für Grafiken
+
+ALTERNATIVE:
+------------
+Falls Sie keine eigenen Bilder haben, können Sie temporär
+kostenlose Stock-Photos verwenden von:
+- Unsplash.com
+- Pexels.com
+- Pixabay.com
+
+Suchbegriffe: "restaurant interior", "pizza", "italian food", etc.

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entdecken Sie unser Restaurant in Bildern - Galerie Landikerstübli">
+    <title>Galerie - Landikerstübli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Landikerstübli</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Navigation öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menü</a></li>
+                    <li><a href="reservationen.html" class="nav-link">Reservationen</a></li>
+                    <li><a href="anfahrt.html" class="nav-link">Anfahrt</a></li>
+                    <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+                    <li><a href="kontakt.html" class="nav-link btn-primary-nav">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Unsere Galerie</h1>
+            <p>Einblicke in unser Restaurant und unsere Spezialitäten</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+                <button class="filter-btn" data-filter="food">Speisen</button>
+                <button class="filter-btn" data-filter="pizza">Pizza</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="restaurant">
+                    <div class="gallery-image">
+                        <img src="images/gallery/restaurant-1.jpg" alt="Restaurant Innenansicht" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Restaurant Innenansicht</h3>
+                            <button class="view-btn" data-image="images/gallery/restaurant-1.jpg">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="restaurant">
+                    <div class="gallery-image">
+                        <img src="images/gallery/restaurant-2.jpg" alt="Restaurant Aussenansicht" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Restaurant von Aussen</h3>
+                            <button class="view-btn" data-image="images/gallery/restaurant-2.jpg">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="restaurant">
+                    <div class="gallery-image">
+                        <img src="images/gallery/restaurant-3.jpg" alt="Restaurant Aussenansicht 2" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Aussenbereich</h3>
+                            <button class="view-btn" data-image="images/gallery/restaurant-3.jpg">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image">
+                        <img src="images/gallery/food-1.jpg" alt="Unsere Spezialitäten" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Unsere Spezialitäten</h3>
+                            <button class="view-btn" data-image="images/gallery/food-1.jpg">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image">
+                        <img src="images/gallery/food-2.jpg" alt="Frische Gerichte" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Frische Gerichte</h3>
+                            <button class="view-btn" data-image="images/gallery/food-2.jpg">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image">
+                        <img src="images/gallery/food-3.jpg" alt="Kulinarische Vielfalt" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Kulinarische Vielfalt</h3>
+                            <button class="view-btn" data-image="images/gallery/food-3.jpg">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="pizza">
+                    <div class="gallery-image">
+                        <img src="images/gallery/pizza-1.jpg" alt="Unsere Pizzas" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Frische Pizza</h3>
+                            <button class="view-btn" data-image="images/gallery/pizza-1.jpg">Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8249;</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
+        <img src="" alt="" class="lightbox-image" id="lightboxImage">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Landikerstübli</h3>
+                    <p>Traditionelles Restaurant mit Pizza, italienischer und Schweizer Küche im Herzen der Region.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menü</a></li>
+                        <li><a href="reservationen.html">Reservationen</a></li>
+                        <li><a href="anfahrt.html">Anfahrt</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Kontakt</h4>
+                    <ul class="footer-contact">
+                        <li>Wettswilerstrasse 3</li>
+                        <li>8903 Birmensdorf</li>
+                        <li>Tel: 043 344 05 36</li>
+                        <li>landikerstuebli@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Öffnungszeiten</h4>
+                    <ul class="footer-contact">
+                        <li>Mo-Fr: 10:00-14:00 & 17:00-23:00</li>
+                        <li>Sa: 17:00-23:00</li>
+                        <li>So: Geschlossen</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Landikerstübli. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/galerie.js"></script>
+</body>
+</html>
