@@ -205,6 +205,15 @@ forms.forEach(form => {
             const submitButton = form.querySelector('button[type="submit"]');
             const originalButtonText = submitButton.textContent;
 
+            // Check if this is demo mode (access key not set)
+            const isDemoMode = accessKey.value === 'IHR_WEB3FORMS_ACCESS_KEY';
+
+            if (isDemoMode) {
+                // Demo mode - just show a message
+                showFormMessage(form, 'info', '📋 Demo-Modus: Das Formular ist noch nicht aktiv. In der Live-Version werden Reservierungen direkt per E-Mail versendet. Für Reservierungen rufen Sie bitte an: 043 344 05 36');
+                return;
+            }
+
             try {
                 submitButton.disabled = true;
                 submitButton.textContent = 'Wird gesendet...';
@@ -263,6 +272,10 @@ function showFormMessage(form, type, message) {
         messageDiv.style.backgroundColor = '#d4edda';
         messageDiv.style.color = '#155724';
         messageDiv.style.border = '1px solid #c3e6cb';
+    } else if (type === 'info') {
+        messageDiv.style.backgroundColor = '#d1ecf1';
+        messageDiv.style.color = '#0c5460';
+        messageDiv.style.border = '1px solid #bee5eb';
     } else {
         messageDiv.style.backgroundColor = '#f8d7da';
         messageDiv.style.color = '#721c24';
